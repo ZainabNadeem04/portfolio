@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Share+Tech+Mono&display=swap");
-
-/* Global styles */
-
+/* General Styles */
 *,
 *::before,
 *::after {
@@ -42,8 +39,7 @@ img {
   height: auto;
 }
 
-/* header */
-
+/* Header */
 header {
   width: 100%;
   height: 5rem;
@@ -73,39 +69,6 @@ nav {
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-.line1 {
-  width: 15px;
-  height: 3px;
-  margin: 5px 0;
-  background: linear-gradient(
-    135deg,
-    rgba(249, 105, 14, 1) 0%,
-    rgb(255, 255, 255) 100%
-  );
-}
-
-.line2 {
-  width: 30px;
-  height: 3px;
-  background: linear-gradient(
-    135deg,
-    rgba(249, 105, 14, 1) 0%,
-    rgb(255, 255, 255) 100%
-  );
-}
-
-.line3 {
-  width: 15px;
-  height: 3px;
-  margin: 5px 0;
-  margin-left: 15px;
-  background: linear-gradient(
-    135deg,
-    rgba(249, 105, 14, 1) 0%,
-    rgb(255, 255, 255) 100%
-  );
-}
-
 .burger-menu-icon {
   cursor: pointer;
   z-index: 999;
@@ -115,18 +78,6 @@ nav {
   background: rgba(55, 55, 55, 0.5);
   padding: 1.2rem;
   border-radius: 0% 0% 0% 40%;
-}
-
-.profile-pic {
-  height: 9rem;
-  width: auto;
-  border-radius: 50%;
-  display: block;
-  margin: 1.5rem 0;
-}
-
-.caption {
-  display: block;
 }
 
 .nav-list {
@@ -164,10 +115,6 @@ nav {
   color: rgba(249, 105, 14, 1);
 }
 
-.toggle {
-  background: none;
-}
-
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px) scaleX(2);
 }
@@ -180,7 +127,6 @@ nav {
   transform: rotate(45deg) translate(-5px, -6px) scaleX(2);
   margin-left: 0px;
 }
-
 @keyframes navLinkAnimate {
   from {
     opacity: 0;
@@ -192,6 +138,7 @@ nav {
   }
 }
 
+
 /* Landing Page */
 .landing-page {
   width: 100%;
@@ -202,7 +149,7 @@ nav {
       rgba(0, 0, 0, 0.8) 100%
     ),
     url("images/landing-page.png") center no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: relative;
 }
 
@@ -228,7 +175,6 @@ nav {
   margin: auto;
   border-right: 4px solid rgba(255, 255, 255, 1);
 }
-
 @keyframes typing {
   75% {
     width: 0ch;
@@ -301,11 +247,9 @@ nav {
   color: rgba(189, 72, 0);
 }
 
-/* About */
-
+/* About Section */
 .about {
-    padding: 4rem 0;
-
+  padding: 4rem 0;
   width: 100%;
   min-height: 100vh;
   max-width: 70rem;
@@ -313,9 +257,6 @@ nav {
 }
 
 .about .container {
-  /* display: flex;
-  align-items: center;
-  min-height: 80vh; */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -326,38 +267,33 @@ nav {
 }
 
 .about-img img {
-
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-   height: 32rem;
-  width: auto; 
-
+  height: 32rem;
+  width: auto;
   margin: 2rem;
-
 }
 
 .about-text-box {
-  
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;
 }
 
 .about-text-box h2 {
-
-   font-size: 4rem;
-  margin-bottom: 20px; 
+  font-size: 4rem;
+  margin-bottom: 20px;
 }
 
 .about-text-box p {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   color: #555;
   margin-bottom: 1rem;
-   font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.4rem;
   padding: 0;
-  margin-bottom: 1.45rem; 
+  margin-bottom: 1.45rem;
 }
 
 hr {
@@ -370,7 +306,6 @@ hr {
   border: 0;
   height: 1px;
 }
-/* Animation Keyframes */
 @keyframes slideInLeft {
   from {
     opacity: 0;
@@ -410,8 +345,9 @@ hr {
   animation: slideInRight 1s ease-out forwards;
 }
 
-/* Services */
 
+
+/* Services Section */
 .services {
   padding: 3rem 0;
   min-height: 100vh;
@@ -482,8 +418,7 @@ hr {
   font-size: 1.4rem;
 }
 
-/* Projects */
-
+/* Projects Section */
 .projects {
   padding: 3rem 0;
   min-height: 100vh;
@@ -491,15 +426,14 @@ hr {
   margin: auto;
 }
 
-.has-margin-right {
-  margin: 0 3rem 0 0;
-}
-
 .project-item {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 1.45rem 5rem 1.45rem;
+}
+.has-margin-right {
+  margin: 0 3rem 0 0;
 }
 
 .project-img {
@@ -510,32 +444,20 @@ hr {
   flex: 1;
 }
 
-/* .project-description h2 {
-    font-size: 2rem;
-    margin: 2rem 0;
-    background: linear-gradient(
-      to right,
-      rgba(249, 105, 14, 1) 0%,
-      rgba(102, 51, 153, 1) 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  } */
-  .project-description h2 {
-    font-size: 2rem;
-    margin: 2rem 0;
-    background: linear-gradient(
-      to right,
-      #f9690e 0%,
-      #663399 100%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block; /* Ensures proper clipping */
-  }
-  
-  
+.project-description h2 {
+  font-size: 2rem;
+  margin: 2rem 0;
+  background: linear-gradient(
+    to right,
+    #f9690e 0%,
+    #663399 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
 .project-description p {
   font-family: "Poppins", sans-serif;
   font-size: 1.4rem;
@@ -547,8 +469,7 @@ hr {
   font-size: 1.4rem;
 }
 
-/* Contact */
-
+/* Contact Section */
 .contact {
   width: 100%;
   min-height: 100vh;
@@ -578,7 +499,6 @@ hr {
 }
 
 /* Footer */
-
 footer {
   width: 100%;
   max-width: 70rem;
@@ -606,77 +526,166 @@ footer a {
 }
 
 /* Responsive Design */
-
-@media (max-width: 750px) {
-  .main-message h3 {
-    font-size: 3rem;
-  }
-  .about .container {
-    flex-direction: column;
-  }
-  p {
-    font-size: 1.3rem;
-  }
-  .title-heading {
-    margin: 0;
-  }
-
-  .services-tiers {
-    gap: 0;
-  }
-  .project-item {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 2rem;
-    box-shadow: 0 20px 30px 0 rgba(212, 255, 255, 0.15);
-  }
-  .project-img {
-    width: 20rem;
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 1rem;
   }
 }
 
-@media (max-width: 665px) {
-  .main-message {
-    top: 55%;
-  }
+@media (max-width: 992px) {
   .main-message h2 {
-    letter-spacing: 1rem;
+    font-size: 1.8rem;
+  }
+
+  .main-message h3 {
+    font-size: 3rem;
+  }
+
+  .about-img img {
+    height: 25rem;
+  }
+
+  .about-text-box h2 {
+    font-size: 3rem;
+  }
+
+  .about-text-box p {
+    font-size: 1.2rem;
+  }
+
+  .tier-item {
+    height: 25rem;
+    padding: 2rem;
+  }
+
+  .tier-item h2 {
+    font-size: 1.8rem;
+  }
+
+  .tier-item p {
+    font-size: 1.2rem;
+  }
+
+  .project-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-description {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-message h2 {
     font-size: 1.5rem;
-    width: 29ch;
+  }
+
+  .main-message h3 {
+    font-size: 2.5rem;
+  }
+
+  .about-img img {
+    height: 20rem;
+  }
+
+  .about-text-box h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-text-box p {
+    font-size: 1.1rem;
+  }
+
+  .tier-item {
+    height: 20rem;
+    padding: 1.5rem;
+  }
+
+  .tier-item h2 {
+    font-size: 1.5rem;
+  }
+
+  .tier-item p {
+    font-size: 1rem;
+  }
+
+  .project-item {
+    margin: 0 1rem 3rem 1rem;
+  }
+
+  .project-description h2 {
+    font-size: 1.8rem;
+  }
+
+  .project-description p {
+    font-size: 1.2rem;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-message h2 {
+    font-size: 1.2rem;
   }
 
   .main-message h3 {
     font-size: 2rem;
   }
 
-  .main-message p {
-    font-size: 1.3rem;
+  .about-img img {
+    height: 15rem;
   }
-  .btn {
-    border-radius: 0.9rem;
-    padding: 0.9rem 0.9rem;
-  }
+
   .about-text-box h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 2rem;
   }
+
   .about-text-box p {
-    margin: 0 0 2.45rem;
+    font-size: 1rem;
   }
 
-  .title-heading h2 {
-    margin-bottom: 2rem;
-  }
-  .title-heading p {
-    font-size: 1.3rem;
+  .tier-item {
+    height: 15rem;
+    padding: 1rem;
   }
 
-  .contact .container {
-    flex-direction: column;
-  }
-
-  footer,
-  footer p {
+  .tier-item h2 {
     font-size: 1.2rem;
+  }
+
+  .tier-item p {
+    font-size: 0.9rem;
+  }
+
+  .project-item {
+    margin: 0 0.5rem 2rem 0.5rem;
+  }
+
+  .project-description h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-description p {
+    font-size: 1rem;
+  }
+
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact p {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 1rem;
   }
 }
