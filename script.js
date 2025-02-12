@@ -68,3 +68,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   tiers.forEach((tier) => observer.observe(tier));
 });
+document.addEventListener('DOMContentLoaded', function() {
+  const animateElements = document.querySelectorAll('[data-animate]');
+
+  const checkVisibility = () => {
+    animateElements.forEach(element => {
+      const rect = element.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+      if (isVisible) {
+        element.classList.add('animated');
+      }
+    });
+  };
+
+  // Initial check
+  checkVisibility();
+
+  // Check on scroll
+  window.addEventListener('scroll', checkVisibility);
+});
